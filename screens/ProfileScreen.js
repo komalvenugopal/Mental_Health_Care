@@ -29,14 +29,10 @@ const ProfileScreen = ({ navigation }) => {
             ))}
           </View>
           {/* New Image at the end of the ScrollView */}
-          <Image
-            source={{ uri: '/Users/pranavichaturvedula/Desktop/Mental_Health_Care/assets/Mood tracker.jpg' }} // Replace with your image URI
-            style={{
-              width: 200, // 50% of screen width
-              height: 400, // 50% of screen height
-              alignSelf: 'center', // Center the image horizontally
-            }}
-          />
+          <TouchableOpacity>
+        <Image source={require('/Users/pranavichaturvedula/Desktop/Mental_Health_Care/assets/Mood tracker.jpg')} style={styles.image} />
+        <Text style={styles.text}>Therapist</Text>
+      </TouchableOpacity>
         </ScrollView>
       );
 };
